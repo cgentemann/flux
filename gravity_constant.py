@@ -11,6 +11,8 @@ def grv(lat,lon=None,shape_wanted=None):
         shape_wanted (tuple): shape of the matrix wanted [optional]
     Returns:
         gg (float ndarray): gravity constant
+        
+        2/12/2020 removed long which was a python 2.7 code
     """
     gamma = 9.7803267715
     c1 = 0.0052790414
@@ -20,7 +22,7 @@ def grv(lat,lon=None,shape_wanted=None):
     logging.debug('grv | lat:%s',lat.shape)
     if lon is not None:
         lon_m,lat_m = meshgrid(lon,lat)
-    elif shape_wanted is not None and isinstance(lat, (int, long, float, complex))==False and len(shape_wanted)>1:
+    elif shape_wanted is not None and isinstance(lat, (int, float, complex))==False and len(shape_wanted)>1:
         randy = random.rand(shape_wanted[1])
 #         lat_m = tile(lat,shape_wanted[1])
         lon_m,lat_m = meshgrid(randy,lat)
