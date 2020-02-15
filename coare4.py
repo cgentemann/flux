@@ -128,7 +128,8 @@ def coare4(inputs):
     Rl = inputs_complet['Rl']
     lat = inputs_complet['lat']
     zi = inputs_complet['zi']
-    
+    print('t',t.shape)
+    print('lat',lat.shape)
     
     jcool = 1
     
@@ -152,7 +153,8 @@ def coare4(inputs):
     von  = 0.4
     fdg  = 1.00 # Turbulent Prandtl number
     tdk  = 273.16
-    grav = grv(lat,shape_wanted=t.shape)
+    grav = grv(lat)
+#    grav = grv(lat,shape_wanted=t.shape)
     
     #***********  air constants **********************************************
     Rgas = 287.1

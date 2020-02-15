@@ -19,6 +19,7 @@ def grv(lat,lon=None,shape_wanted=None):
     c2 = 0.0000232718
     c3 = 0.0000001262
     c4 = 0.0000000007
+    
     logging.debug('grv | lat:%s',lat.shape)
     if lon is not None:
         lon_m,lat_m = meshgrid(lon,lat)
