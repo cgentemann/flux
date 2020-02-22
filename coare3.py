@@ -126,6 +126,7 @@ def coare3(inputs):
     von = 0.4
     fdg = 1.00
     tdk = 273.16
+#    print(lat.size())
     grav = grv(lat) #,shape_wanted=u.shape)#9.82
     #############  air constants ############
     Rgas = 287.1
