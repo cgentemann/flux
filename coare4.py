@@ -128,8 +128,8 @@ def coare4(inputs):
     Rl = inputs_complet['Rl']
     lat = inputs_complet['lat']
     zi = inputs_complet['zi']
-    print('t',t.shape)
-    print('lat',lat.shape)
+#    print('t',t.shape)
+#    print('lat',lat.shape)
     
     jcool = 1
     
