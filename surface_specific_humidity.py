@@ -23,7 +23,7 @@ def sea_humidity_method_bentamy(sea_surface_temperature):
     Returns:
         sea_surface_specific_humidity (float): sea surface saturation specific humidity [g/kg]
     """
-    TSM = sea_surface_temperature + 273
+    TSM = sea_surface_temperature + 273.15
     a = -4.928
     b = 23.55
     c = -2937.0
